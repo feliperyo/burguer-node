@@ -1,8 +1,10 @@
 const express = require("express");
 const uuid = require("uuid");
 const app = express();
-app.listen(3000);
+const cors = require("cors");
+app.listen(3001);
 app.use(express.json());
+app.use(cors());
 
 const newOrder = [];
 
